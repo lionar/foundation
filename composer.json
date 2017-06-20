@@ -24,6 +24,7 @@
 			"foundation\\": "source"
    	 	},
    	 	"files": [
+   	 		"source/helpers/filesystem.php",
    	 		"source/helpers/readability.php",
    	 		"source/helpers/text.php"
    	 	]
