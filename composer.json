@@ -1,0 +1,39 @@
+{
+	"name": "lionar/foundation",
+	"version": "0.0.1",
+	"description": "A foundation to build a well organised application from.",
+	"keywords": [ "Firestart", "Project" ],
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Aron Wouters",
+			"email": "lionar@mail.com",
+			"role": "Developer"
+		}
+	],
+	"require" : {
+		"lionar/ioc": "*"
+  	},
+	"require-dev": {
+		
+	},
+	"autoload": {
+    	"psr-4": {
+			"": "source/facades",
+			"foundation\\": "source"
+   	 	},
+   	 	"files": [
+   	 		"source/helpers/readability.php",
+   	 		"source/helpers/text.php"
+   	 	]
+  	},
+	"autoload-dev": {
+    	"psr-4": {
+			
+		}
+	},
+	"config": {
+		"preferred-install": "dist"
+	},
+	"minimum-stability": "dev"
+}
