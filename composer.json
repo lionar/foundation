@@ -19,7 +19,7 @@
 	},
 	"autoload": {
     	"psr-4": {
-			"": "source/facades",
+			"": [ "source/facades", "source/helpers" ],
 			"agreed\\": "source/agreements",
 			"foundation\\": "source"
    	 	},
