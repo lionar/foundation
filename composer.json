@@ -12,7 +12,8 @@
 		}
 	],
 	"require" : {
-		"lionar/ioc": "*"
+		"lionar/ioc": "*",
+		"lionar/path": "*"
   	},
 	"require-dev": {
 		

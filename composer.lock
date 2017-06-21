@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "ce522ea69820b2dc07db6191c7e39fd5",
+    "content-hash": "fcf53e97225f42b9b9f86fe3ae97fd40",
     "packages": [
         {
             "name": "lionar/ioc",
@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/lionar/ioc.git",
-                "reference": "eccea477748261e8b334d20e45b436abf3aeec55"
+                "reference": "eb8649c41eeefe3d41a2f57d0ff71eb85df66241"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lionar/ioc/zipball/eccea477748261e8b334d20e45b436abf3aeec55",
-                "reference": "eccea477748261e8b334d20e45b436abf3aeec55",
+                "url": "https://api.github.com/repos/lionar/ioc/zipball/eb8649c41eeefe3d41a2f57d0ff71eb85df66241",
+                "reference": "eb8649c41eeefe3d41a2f57d0ff71eb85df66241",
                 "shasum": ""
             },
             "type": "library",
@@ -43,7 +43,45 @@
                 "ioc",
                 "lionar"
             ],
-            "time": "2017-06-19T22:11:40+00:00"
+            "time": "2017-06-20T10:53:42+00:00"
+        },
+        {
+            "name": "lionar/path",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/lionar-php/path.git",
+                "reference": "adfb92bc17315078d93eca0aa358afcaf4f7413b"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/lionar-php/path/zipball/adfb92bc17315078d93eca0aa358afcaf4f7413b",
+                "reference": "adfb92bc17315078d93eca0aa358afcaf4f7413b",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Path\\": "source"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Aron Wouters",
+                    "email": "lionar@mail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Simple path collection.",
+            "keywords": [
+                "lionar",
+                "path"
+            ],
+            "time": "2017-05-18T12:55:06+00:00"
         }
     ],
     "packages-dev": [],
