@@ -1,9 +1,19 @@
 <?php
 
-class route extends facade
+class route
 {
-    protected static function getFacadeAccessor ( )
+	private static $router = null;
+
+	public static function routedBy ( agreed\router $router )
+	{
+		static::$router = $router;
+	}
+
+	public static function __callStatic ( $method, $args )
     {
-        return 'router';
+        if ( ! static::$router )
+        	throw new RuntimeException ( 'No router has been set.' );
+        
+        return static::$router->$method ( ...$args );
     }
 }
