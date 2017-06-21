@@ -9,5 +9,5 @@ facade::setFacadeApplication ( $app );
 
 $app->share ( 'path', function ( )
 {
-	return new path\collection ( '../../..' );
+	return new path\collection ( '../..' );
 } );

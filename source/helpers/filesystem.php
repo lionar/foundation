@@ -1,5 +1,12 @@
 <?php
 
+namespace filesystem;
+
+use RecursiveDirectoryIterator;
+use RecursiveIteratorIterator;
+use RegexIterator;
+use RecursiveRegexIterator;
+
 function require_recursive ( $directory )
 {
 	$directory = new RecursiveDirectoryIterator ( $directory );
