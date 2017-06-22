@@ -2,7 +2,7 @@
 
 namespace agreed;
 
-class view
+interface view
 {
 	public function make ( string $template, array $data = [ ] ) : string;
 }
