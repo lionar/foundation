@@ -26,6 +26,16 @@ $app->share ( 'path', function ( ) use ( $path )
 
 /*
 |--------------------------------------------------------------------------
+| Loading application services
+|--------------------------------------------------------------------------
+| Load in the application services.
+| 
+|
+*/
+filesystem\require_recursive ( $path->to ( 'bindings' ) );
+
+/*
+|--------------------------------------------------------------------------
 | Application
 |--------------------------------------------------------------------------
 | Load in the application business rules.
