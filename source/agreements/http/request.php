@@ -1,6 +1,6 @@
 <?php
 
-namespace http;
+namespace agreed\http;
 
 interface request
 {
