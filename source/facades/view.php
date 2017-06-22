@@ -2,7 +2,7 @@
 
 class view
 {
-	private static $engine = null;
+ 	private static $engine = null;
 
    	public static function composedBy ( agreed\view $engine )
    	{
