@@ -54,6 +54,6 @@ class input
 	public function compose ( string $key, array $data )
 	{
 		if ( isset ( $this->compositions [ $key ] ) )
-			return call_user_func_array ( $this->compositions [ $key, $data ] );
+			return call_user_func_array ( $this->compositions [ $key ], $data );
 	}
 }
