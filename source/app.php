@@ -15,7 +15,7 @@ class app extends container
 
 	public function make ( string $abstract, array $payload = [ ] )
 	{
-		$payload = array_merge ( $this->input->collection, $payload );
+		$payload = array_merge ( $this->input->all ( ), $payload );
 		return parent::make ( $abstract, $payload );
 	}
 }
