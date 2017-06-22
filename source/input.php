@@ -6,6 +6,8 @@ use Closure as closure;
 
 class input
 {
+	use \accessibility\readable;
+	
 	private $collection = [ ];
 
 	public function __set ( string $key, $value )

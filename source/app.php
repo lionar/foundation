@@ -10,5 +10,12 @@ class app extends container
 	{
 		$input = ( $input ) ?: new input;
 		$this->share ( 'input', function ( ) use ( $input ) { return $input; } );
+		$this->input = $input;
+	}
+
+	public function make ( string $abstract, array $payload = [ ] )
+	{
+		$payload = array_merge ( $this->input->collection, $payload );
+		return parent::make ( $abstract, $payload );
 	}
 }
