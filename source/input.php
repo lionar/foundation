@@ -31,11 +31,17 @@ class input
 		return $this->collection;
 	}
 
-	public function bind ( $key, closure $binding )
+	public function binding ( $key, closure $binding )
 	{
 		if ( isset ( $this->bindings [ $key ] ) )
 			throw new bindingExistentException ( $key );
 		$this->bindings [ $key ] = $binding;
+	}
+
+	public function bind ( string $key )
+	{
+		if ( isset ( $this->bindings [ $key ] ) )
+			$this->bindings [ $key ] ( $this );
 	}
 
 	public function composition ( $key, closure $binding )
@@ -43,5 +49,11 @@ class input
 		if ( isset ( $this->bindings [ $key ] ) )
 			throw new compositionExistentException ( $key );
 		$this->compositions [ $key ] = $binding;
+	}
+
+	public function compose ( string $key, array $data )
+	{
+		if ( isset ( $this->compositions [ $key ] ) )
+			return call_user_func_array ( $this->compositions [ $key, $data ] );
 	}
 }

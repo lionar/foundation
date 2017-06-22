@@ -24,6 +24,7 @@ $app->share ( 'path', function ( ) use ( $path )
 	return $path;
 } );
 
+
 /*
 |--------------------------------------------------------------------------
 | Loading application services
