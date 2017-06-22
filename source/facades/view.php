@@ -1,9 +1,19 @@
 <?php
 
-class view extends facade
+class view
 {
-    protected static function getFacadeAccessor ( )
+	private static $engine = null;
+
+   	public static function composedBy ( agreed\view $engine )
+   	{
+   		static::$engine = $engine;
+   	}
+
+   	public static function __callStatic ( $method, $args )
     {
-        return 'view';
+        if ( ! static::$engine )
+        	throw new RuntimeException ( 'No view engine has been set.' );
+        
+        return static::$engine->$method ( ...$args );
     }
 }
