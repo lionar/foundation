@@ -4,7 +4,7 @@ class app
 {
 	private static $instance = null;
 
-	public static function instance ( foundation\app $app )
+	public static function instance ( foundation\app $instance )
 	{
 		static::$instance = $instance;
 	}
