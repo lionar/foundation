@@ -12,6 +12,7 @@
 		}
 	],
 	"require" : {
+		"lionar/input": "*",
 		"lionar/ioc": "*",
 		"lionar/path": "*"
   	},

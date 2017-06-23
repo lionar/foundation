@@ -3,6 +3,7 @@
 namespace foundation;
 
 use ioc\container;
+use input\collection as input;
 
 class app extends container
 {
