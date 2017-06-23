@@ -5,7 +5,7 @@ require __DIR__ . '/../../autoload.php';
 $app = new foundation\app;
 $app->share ( 'app', function ( ) use ( $app ) { return $app; } );
 
-facade::setFacadeApplication ( $app );
+app::instance ( $app );
 
 
 /*
@@ -24,6 +24,7 @@ $app->share ( 'path', function ( ) use ( $path )
 	return $path;
 } );
 
+path::instance ( $path );
 
 /*
 |--------------------------------------------------------------------------

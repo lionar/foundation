@@ -7,10 +7,13 @@ use input\collection as input;
 
 class app extends container
 {
+	private $triggers = [ ];
+
 	public function __construct ( input $input = null )
 	{
 		$input = ( $input ) ?: new input;
 		$this->share ( 'input', function ( ) use ( $input ) { return $input; } );
+		\input::instance ( $input );
 		$this->input = $input;
 	}
 

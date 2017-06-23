@@ -1,9 +1,19 @@
 <?php
 
-class app extends facade
+class app
 {
-    protected static function getFacadeAccessor ( )
+	private static $instance = null;
+
+	public static function instance ( foundation\app $app )
+	{
+		static::$instance = $instance;
+	}
+
+	public static function __callStatic ( $method, $args )
     {
-        return 'app';
+        if ( ! static::$instance )
+        	throw new RuntimeException ( 'No app instance has been set.' );
+        
+        return static::$instance->$method ( ...$args );
     }
 }
