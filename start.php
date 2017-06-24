@@ -39,16 +39,6 @@ filesystem\require_recursive ( $path->to ( 'bindings' ) );
 
 /*
 |--------------------------------------------------------------------------
-| Loading application effects
-|--------------------------------------------------------------------------
-| Load in the application effects.
-| 
-|
-*/
-filesystem\require_recursive ( $path->to ( 'effects' ) );
-
-/*
-|--------------------------------------------------------------------------
 | Application
 |--------------------------------------------------------------------------
 | Load in the application business rules.
