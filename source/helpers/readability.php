@@ -21,3 +21,8 @@ function a ( $task )
 {
 	return $task;
 }
+
+function readable ( $wrapped )
+{
+	return $wrapped;
+}

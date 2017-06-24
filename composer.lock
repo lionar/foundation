@@ -4,20 +4,96 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "fcf53e97225f42b9b9f86fe3ae97fd40",
+    "content-hash": "e5d58bf4034af7733412b42ae659fe40",
     "packages": [
+        {
+            "name": "lionar/events",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/lionar/events.git",
+                "reference": "e4cabe28f2914673f84cb3e5e7118a6570e9bf74"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/lionar/events/zipball/e4cabe28f2914673f84cb3e5e7118a6570e9bf74",
+                "reference": "e4cabe28f2914673f84cb3e5e7118a6570e9bf74",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "events\\": "source"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Aron Wouters",
+                    "email": "lionar@mail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A simple events dispatcher.",
+            "keywords": [
+                "dispatcher",
+                "lionar"
+            ],
+            "time": "2017-06-24T13:03:22+00:00"
+        },
+        {
+            "name": "lionar/input",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/lionar/input.git",
+                "reference": "c5dea63fb51557c683751eeff40456f90a57d211"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/lionar/input/zipball/c5dea63fb51557c683751eeff40456f90a57d211",
+                "reference": "c5dea63fb51557c683751eeff40456f90a57d211",
+                "shasum": ""
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "input\\": "source"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Aron Wouters",
+                    "email": "lionar@mail.com",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A simple input package.",
+            "keywords": [
+                "input",
+                "lionar"
+            ],
+            "time": "2017-06-23T10:03:30+00:00"
+        },
         {
             "name": "lionar/ioc",
             "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/lionar/ioc.git",
-                "reference": "eb8649c41eeefe3d41a2f57d0ff71eb85df66241"
+                "reference": "866fe4fbce87a2d83e536ec3559cd708b1b5731d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lionar/ioc/zipball/eb8649c41eeefe3d41a2f57d0ff71eb85df66241",
-                "reference": "eb8649c41eeefe3d41a2f57d0ff71eb85df66241",
+                "url": "https://api.github.com/repos/lionar/ioc/zipball/866fe4fbce87a2d83e536ec3559cd708b1b5731d",
+                "reference": "866fe4fbce87a2d83e536ec3559cd708b1b5731d",
                 "shasum": ""
             },
             "type": "library",
@@ -43,26 +119,26 @@
                 "ioc",
                 "lionar"
             ],
-            "time": "2017-06-20T10:53:42+00:00"
+            "time": "2017-06-24T17:08:51+00:00"
         },
         {
             "name": "lionar/path",
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/lionar-php/path.git",
-                "reference": "adfb92bc17315078d93eca0aa358afcaf4f7413b"
+                "url": "https://github.com/lionar/path.git",
+                "reference": "37ec376395de98c20d62f225122ae9a38ee45154"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/lionar-php/path/zipball/adfb92bc17315078d93eca0aa358afcaf4f7413b",
-                "reference": "adfb92bc17315078d93eca0aa358afcaf4f7413b",
+                "url": "https://api.github.com/repos/lionar/path/zipball/37ec376395de98c20d62f225122ae9a38ee45154",
+                "reference": "37ec376395de98c20d62f225122ae9a38ee45154",
                 "shasum": ""
             },
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "Path\\": "source"
+                    "path\\": "source"
                 }
             },
             "notification-url": "https://packagist.org/downloads/",
@@ -81,7 +157,7 @@
                 "lionar",
                 "path"
             ],
-            "time": "2017-05-18T12:55:06+00:00"
+            "time": "2017-06-21T15:35:24+00:00"
         }
     ],
     "packages-dev": [],

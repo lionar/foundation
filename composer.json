@@ -12,6 +12,7 @@
 		}
 	],
 	"require" : {
+		"lionar/events": "*",
 		"lionar/input": "*",
 		"lionar/ioc": "*",
 		"lionar/path": "*"

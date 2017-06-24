@@ -6,7 +6,8 @@ $app = new foundation\app;
 $app->share ( 'app', function ( ) use ( $app ) { return $app; } );
 
 app::instance ( $app );
-
+effect::instance ( $app->effects );
+input::instance ( $app->input );
 
 /*
 |--------------------------------------------------------------------------
