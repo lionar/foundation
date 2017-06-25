@@ -49,8 +49,3 @@ class app extends container
 		$this->input = $input;
 	}
 }
-
-// Todo
-// Make a public call function in the ioc container which directly resolves closures
-// this way we can skip the type lookup process and resolve closures directly when
-// we already have closure
