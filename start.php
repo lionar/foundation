@@ -7,7 +7,7 @@ $app = new foundation\app ( $statuses );
 $app->share ( 'app', function ( ) use ( $app ) { return $app; } );
 
 app::instance ( $app );
-statuses::instance ( $statuses );
+status::instance ( $statuses );
 
 ( new input\inputServiceProvider ( $app ) )->register ( );
 

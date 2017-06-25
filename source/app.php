@@ -10,6 +10,7 @@ class app extends container
 
 	public function __construct ( statuses $statuses )
 	{
+		parent::__construct ( );
 		$this->statuses = $statuses;
 	}
 
