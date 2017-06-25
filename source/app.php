@@ -23,6 +23,6 @@ class app extends container
 	public function fullfill ( string $abstract )
 	{
 		$response = $this->make ( $abstract );
-		return $this->make ( $this->statuses->get ( $response [ 0 ] ), $response [ 1 ] );
+		return $this->call ( $this->statuses->get ( $response [ 0 ] ), $response [ 1 ] );
 	}
 }
