@@ -6,7 +6,9 @@ $app = new foundation\app;
 $app->share ( 'app', function ( ) use ( $app ) { return $app; } );
 
 app::instance ( $app );
-input::instance ( $app->input );
+
+( new input\inputServiceProvider ( $app ) )->register ( );
+
 
 /*
 |--------------------------------------------------------------------------
