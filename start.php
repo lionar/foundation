@@ -2,10 +2,12 @@
 
 require __DIR__ . '/../../autoload.php';
 
-$app = new foundation\app;
+$statuses = new foundation\statuses;
+$app = new foundation\app ( $statuses );
 $app->share ( 'app', function ( ) use ( $app ) { return $app; } );
 
 app::instance ( $app );
+statuses::instance ( $statuses );
 
 ( new input\inputServiceProvider ( $app ) )->register ( );
 
